@@ -4,14 +4,15 @@ import java.util.ArrayList;
 
 public class Subjects {
     private Subject  subject;
-    private int capacity;
+    private int courseCode;
 
     private ArrayList<String> teachers = new ArrayList<String>();
 
-    public Subjects(Subject  subject, int capacity) {
+    public Subjects(Subject  subject, int courseCode) {
         this.subject = subject;
-        this.capacity = capacity;
+        this.courseCode = courseCode;
     }
+
     public void addTeachers(Teacher teacher){
         if(teacher.getSubject() == subject)
             teachers.add(teacher.getName());
@@ -28,7 +29,7 @@ public class Subjects {
         return subject;
     }
 
-    public int getCapacity() {
-        return capacity;
+    public int getCourseCode(){
+        return courseCode;
     }
 }
