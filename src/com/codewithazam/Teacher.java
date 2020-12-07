@@ -1,27 +1,21 @@
 package com.codewithazam;
 
+import java.util.ArrayList;
+
 public class Teacher {
     private String name;
-    private Classes teach;
+    private Subject subject;
 
-    public Teacher(String name, Classes classes) {
+    public Teacher(String name, Subject subject) {
         this.name = name;
-        this.teach = classes;
+        this.subject = subject;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Classes getTeach() {
-        return teach;
-    }
-
-    public void setTeach(Classes teach) {
-        this.teach = teach;
+    public Subject getSubject() {
+        return subject;
     }
 }
